@@ -1,0 +1,8 @@
+<div style="border: 5px solid rgb(0, 174, 255)">
+    <h2>all-tasks.component</h2>
+    <button (click)="getTasksOnClick()">Get All Tasks</button>
+    <div *ngFor="let task of tasks">
+      <p>{{ task.title }}<button [routerLink]="['/', task._id]">Show</button></p>
+    </div>
+  </div>
+

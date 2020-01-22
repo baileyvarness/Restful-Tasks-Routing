@@ -1,0 +1,19 @@
+<div style="border: 5px solid rgb(255, 0, 149)">
+  <h2>new-task.component</h2>
+
+  <form (submit)="handleSubmit()">
+      <div>
+        <label>Title: </label>
+        <input type="text" name="title" [(ngModel)]="newTask.title" />
+      </div>
+      <div>
+        <label>Description: </label>
+        <input type="text" name="description"  [(ngModel)]="newTask.description" />
+      </div>
+      <div>
+        <label>Completed: </label>
+        <input type="checkbox" name="completed" [(ngModel)]="newTask.completed" />
+      </div>
+      <button>Submit</button>
+  </form>
+</div>
